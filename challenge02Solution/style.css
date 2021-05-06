@@ -1,13 +1,11 @@
 /* challenge is to replicate this https://www.figma.com/file/dGPcL6Ym2avOt4736aHb2B/conquer-responsive-layout-week-1-final-challenge?node-id=0%3A1 */
- @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin     : 0;
-  font-family: 'Inter', sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 .container {
