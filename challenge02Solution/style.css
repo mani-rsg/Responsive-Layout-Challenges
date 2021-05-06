@@ -1,18 +1,5 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
+/* challenge is to replicate this https://www.figma.com/file/dGPcL6Ym2avOt4736aHb2B/conquer-responsive-layout-week-1-final-challenge?node-id=0%3A1 */
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
   box-sizing: border-box;
@@ -20,7 +7,7 @@
 
 body {
   margin     : 0;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -31,11 +18,25 @@ body {
 }
 
 .intro-content {
-  width: 50%;
+  width: 80%;
 }
 
 .intro {
   background: #23424a;
   color     : white;
   padding   : 50px 0;
+}
+
+.btn{
+  background-color :#0edae9;
+  font-size: 1rem;
+  padding: 0.6em 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:2em;
+  text-transform: uppercase;
+  color: #03282e;
+}
+.btn-wrapper{
+  margin: 2rem 0;
 }
