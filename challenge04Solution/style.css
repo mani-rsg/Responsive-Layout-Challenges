@@ -19,14 +19,16 @@
 
    */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    margin     : 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+    font-size  : 1.3rem;
 }
 
 h1 {
@@ -34,28 +36,42 @@ h1 {
 }
 
 .container {
-    width: 80%;
+    width    : 80%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .row {
     /* display: flex => flex container */
     display: flex;
-
+    width:100%;
+    padding: 50px 0;
     /* can't use yet */
-    /* gap: 100px; */
+    /* gap : 100px; */
 }
 
 .col {
     /* these are now flex items */
-    width: 100%;
+    width     : 100%;
+    text-align: center;
+}
+.col + .col{
+    margin-left:10px
+}
+.row-1 h2 {
+    color: #87629A;
 }
 
+.parent-container {
+    background-color: #136C72
+}
+.row-2 .col{
+    color: #fff
+}
 .hero {
-    padding: 100px 0;
+    padding         : 100px 0;
     background-color: #23424A;
-    color: #FFF;
+    color           : #FFF;
 }
 
 .hero__text {
@@ -67,17 +83,17 @@ h1 {
 }
 
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
-    font-weight: 900;
+    display         : inline-block;
+    text-decoration : none;
+    text-transform  : uppercase;
+    color           : #23424A;
+    font-weight     : 900;
     background-color: #38CFD9;
-    padding: .75em 2em;
-    border-radius: 100px;
+    padding         : .75em 2em;
+    border-radius   : 100px;
 }
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+    opacity: .75;
 }
