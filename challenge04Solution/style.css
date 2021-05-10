@@ -45,27 +45,26 @@ h1 {
     /* display: flex => flex container */
     display: flex;
     width:100%;
-    padding: 50px 0;
+    padding: 3em 0;
     /* can't use yet */
     /* gap : 100px; */
 }
 
 .col {
     /* these are now flex items */
-    width     : 100%;
     text-align: center;
 }
 .col + .col{
-    margin-left:10px
+    margin-left:2em
 }
-.row-1 h2 {
+.two-col h2 {
     color: #87629A;
 }
 
-.parent-container {
+.three-col {
     background-color: #136C72
 }
-.row-2 .col{
+.three-col .col{
     color: #fff
 }
 .hero {
