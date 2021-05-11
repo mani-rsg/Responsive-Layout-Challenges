@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *,
 *::before,
@@ -31,8 +24,13 @@ body {
     font-size  : 1.3rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size : 3rem;
+    margin-top: 0;
 }
 
 .container {
@@ -43,38 +41,36 @@ h1 {
 
 .row {
     /* display: flex => flex container */
-    display: flex;
-    width:100%;
-    padding: 3em 0;
+    display        : flex;
+    justify-content: space-between;
+
     /* can't use yet */
-    /* gap : 100px; */
+    /* gap: 100px; */
 }
 
 .col {
     /* these are now flex items */
-    text-align: center;
-}
-.col + .col{
-    margin-left:2em
-}
-.two-col h2 {
-    color: #87629A;
+    width: 100%;
 }
 
-.three-col {
-    background-color: #136C72
+.col+.col {
+    margin-left: 30px;
 }
-.three-col .col{
-    color: #fff
-}
+
 .hero {
     padding         : 100px 0;
     background-color: #23424A;
     color           : #FFF;
+    margin-bottom   : 2em
 }
 
 .hero__text {
-    width: 60%;
+    width: 62%;
+}
+
+.hero__img {
+    width     : 32%;
+    align-self: flex-start;
 }
 
 .hero p {
@@ -95,4 +91,23 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75;
+}
+
+.content__right {
+    background-color: #136C72;
+    width           : 32%;
+    display         : flex;
+    flex-direction  : column;
+    color           : #FFF;
+    text-align      : center;
+    padding         : 1em 3em;
+    justify-content : space-between;
+}
+
+.content__left h2 {
+    color: #136C72
+}
+
+.content__left {
+    width: 62%;
 }
