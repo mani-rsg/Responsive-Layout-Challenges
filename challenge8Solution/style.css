@@ -213,23 +213,22 @@ header {
         display   : flex;
         height    : auto;
         position  : unset;
+        width: auto;
     }
-
+    
     .nav ul {
+        margin: 0;
         display: flex;
-        gap: 2em;
-    }
-
-    .nav > ul {
-        width: 70%;
     }
 
     .nav__item+.nav__item {
         margin-top: 0;
+        margin-left: 1em;
     }
     
     .nav__list+.nav__list {
         margin-top: 0;
+        margin-left: 2em;
     }
 
     .row {
